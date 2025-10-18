@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPC Classes - Education Beyond Books</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SPC Classes</h2>
+                <span class="tagline">Education Beyond Books</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#portal" class="nav-link">Student Portal</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="highlight">Excellence</span> in Education
+                </h1>
+                <p class="hero-subtitle">Education Beyond Books - Shaping Future Leaders</p>
+                <p class="hero-description">Empowering students with quality education in Accountancy, Economics, and Business Studies through innovative teaching methods and personalized attention.</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">
+                        <i class="fas fa-graduation-cap"></i>
+                        Explore Courses
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        Get Started
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card">
+                    <div class="card-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Quality Education</h3>
+                    <p>Expert faculty with proven teaching methods</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2>Why Choose SPC Classes?</h2>
+                <p>Your trusted partner in academic excellence with a commitment to holistic education</p>
+            </div>
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Expert Faculty</h3>
+                        <p>Highly qualified teachers with years of experience in commerce education</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Proven Results</h3>
+                        <p>Consistent track record of student success and high academic achievements</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Personal Care</h3>
+                        <p>Individual attention and customized learning approaches for every student</p>
+                    </div>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Students Taught</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>95%</h3>
+                        <p>Success Rate</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>7+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3</h3>
+                        <p>Core Subjects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Courses</span>
+                <h2>Comprehensive Learning Programs</h2>
+                <p>Specialized courses designed to excel in commerce subjects</p>
+            </div>
+            <div class="courses-grid">
+                <!-- Accountancy Course -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="course-badge">Popular</div>
+                    </div>
+                    <h3>Accountancy</h3>
+                    <p>Master the fundamentals of accounting with comprehensive coverage of financial and cost accounting principles.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-check"></i> Financial Accounting</span>
+                        <span><i class="fas fa-check"></i> Cost Accounting</span>
+                        <span><i class="fas fa-check"></i> Practical Applications</span>
+                    </div>
+                    <div class="course-details">
+                        <button class="details-btn" onclick="toggleDetails('accountancy')">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="accountancy" class="course-dropdown">
+                            <div class="dropdown-content">
+                                <h4>📊 Accountancy Course Details</h4>
+                                
+                                <div class="course-overview">
+                                    <p><strong>Master the art of financial management and accounting principles with our comprehensive Accountancy program.</strong></p>
+                                </div>
+
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Duration: 12 Months</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Batch Size: 15-20 Students</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        <span>Fee: ₹15,000/year</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>Schedule: Mon-Fri (4-6 PM)</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-book"></i>
+                                        <span>Study Material: Included</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-certificate"></i>
+                                        <span>Certificate: Yes</span>
+                                    </div>
+                                </div>
+
+                                <div class="curriculum-section">
+                                    <h5>📚 What You'll Learn:</h5>
+                                    <ul class="curriculum-list">
+                                        <li>Financial Accounting Fundamentals</li>
+                                        <li>Cost Accounting & Management</li>
+                                        <li>Taxation Basics (Income Tax & GST)</li>
+                                        <li>Financial Statement Analysis</li>
+                                        <li>Computerized Accounting (Tally)</li>
+                                        <li>Practical Case Studies</li>
+                                    </ul>
+                                </div>
+
+                                <div class="features-section">
+                                    <h5>✨ Course Features:</h5>
+                                    <div class="features-grid">
+                                        <span class="feature-tag">📝 Regular Assessments</span>
+                                        <span class="feature-tag">👨‍🏫 Expert Faculty</span>
+                                        <span class="feature-tag">💼 Practical Training</span>
+                                        <span class="feature-tag">📞 Doubt Clearing Sessions</span>
+                                    </div>
+                                </div>
+
+                                <button class="enroll-btn" onclick="scrollToContact()">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Enroll Now - Start Your Journey!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Economics Course -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <h3>Economics</h3>
+                    <p>Understand economic principles, market dynamics, and policy implications with real-world applications.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-check"></i> Microeconomics</span>
+                        <span><i class="fas fa-check"></i> Macroeconomics</span>
+                        <span><i class="fas fa-check"></i> Indian Economy</span>
+                    </div>
+                    <div class="course-details">
+                        <button class="details-btn" onclick="toggleDetails('economics')">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="economics" class="course-dropdown">
+                            <div class="dropdown-content">
+                                <h4>📈 Economics Course Details</h4>
+                                
+                                <div class="course-overview">
+                                    <p><strong>Understand market dynamics, economic policies, and financial systems with our comprehensive Economics program.</strong></p>
+                                </div>
+
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Duration: 12 Months</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Batch Size: 12-18 Students</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        <span>Fee: ₹14,000/year</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>Schedule: Tue-Sat (5-7 PM)</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-book"></i>
+                                        <span>Study Material: Included</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-certificate"></i>
+                                        <span>Certificate: Yes</span>
+                                    </div>
+                                </div>
+
+                                <div class="curriculum-section">
+                                    <h5>📚 What You'll Learn:</h5>
+                                    <ul class="curriculum-list">
+                                        <li>Microeconomics & Market Structures</li>
+                                        <li>Macroeconomics & National Income</li>
+                                        <li>Indian Economic Development</li>
+                                        <li>Money & Banking Systems</li>
+                                        <li>International Trade & Finance</li>
+                                        <li>Economic Policies & Reforms</li>
+                                    </ul>
+                                </div>
+
+                                <div class="features-section">
+                                    <h5>✨ Course Features:</h5>
+                                    <div class="features-grid">
+                                        <span class="feature-tag">📊 Data Analysis</span>
+                                        <span class="feature-tag">🌍 Current Affairs</span>
+                                        <span class="feature-tag">📈 Market Research</span>
+                                        <span class="feature-tag">💡 Case Studies</span>
+                                    </div>
+                                </div>
+
+                                <button class="enroll-btn" onclick="scrollToContact()">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Enroll Now - Start Your Journey!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Studies Course -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <h3>Business Studies</h3>
+                    <p>Learn management principles, business operations, and entrepreneurship skills for future leaders.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-check"></i> Management Principles</span>
+                        <span><i class="fas fa-check"></i> Business Environment</span>
+                        <span><i class="fas fa-check"></i> Entrepreneurship</span>
+                    </div>
+                    <div class="course-details">
+                        <button class="details-btn" onclick="toggleDetails('business')">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="business" class="course-dropdown">
+                            <div class="dropdown-content">
+                                <h4>💼 Business Studies Course Details</h4>
+                                
+                                <div class="course-overview">
+                                    <p><strong>Develop leadership skills and business acumen with our comprehensive Business Studies program designed for future entrepreneurs.</strong></p>
+                                </div>
+
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Duration: 12 Months</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Batch Size: 20-25 Students</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        <span>Fee: ₹13,000/year</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>Schedule: Mon-Sat (3-5 PM)</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-book"></i>
+                                        <span>Study Material: Included</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-certificate"></i>
+                                        <span>Certificate: Yes</span>
+                                    </div>
+                                </div>
+
+                                <div class="curriculum-section">
+                                    <h5>📚 What You'll Learn:</h5>
+                                    <ul class="curriculum-list">
+                                        <li>Principles of Management</li>
+                                        <li>Business Environment & Ethics</li>
+                                        <li>Marketing & Consumer Behavior</li>
+                                        <li>Human Resource Management</li>
+                                        <li>Financial Management Basics</li>
+                                        <li>Entrepreneurship Development</li>
+                                    </ul>
+                                </div>
+
+                                <div class="features-section">
+                                    <h5>✨ Course Features:</h5>
+                                    <div class="features-grid">
+                                        <span class="feature-tag">🚀 Startup Guidance</span>
+                                        <span class="feature-tag">👥 Team Projects</span>
+                                        <span class="feature-tag">📋 Business Plans</span>
+                                        <span class="feature-tag">🎯 Leadership Skills</span>
+                                    </div>
+                                </div>
+
+                                <button class="enroll-btn" onclick="scrollToContact()">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Enroll Now - Start Your Journey!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Portal Section -->
+    <section id="portal" class="student-portal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Student Portal</span>
+                <h2>Your Learning Hub</h2>
+                <p>Access all your academic resources and track your progress</p>
+            </div>
+            <div class="portal-grid">
+                <div class="portal-card">
+                    <div class="portal-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Class Schedule</h3>
+                    <p>View your upcoming classes, timings, and important dates</p>
+                    <a href="#" class="portal-link">Access Schedule</a>
+                </div>
+                <div class="portal-card">
+                    <div class="portal-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Study Materials</h3>
+                    <p>Download notes, assignments, and additional resources</p>
+                    <a href="#" class="portal-link">Download Materials</a>
+                </div>
+                <div class="portal-card">
+                    <div class="portal-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Progress Reports</h3>
+                    <p>Track your academic performance and improvement areas</p>
+                    <a href="#" class="portal-link">View Reports</a>
+                </div>
+                <div class="portal-card">
+                    <div class="portal-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Announcements</h3>
+                    <p>Stay updated with important notices and updates</p>
+                    <a href="#" class="portal-link">View Announcements</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <p>Ready to start your learning journey? We're here to help!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>123 Education Street<br>Learning City, State 123456</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+91 98765 43210<br>+91 87654 32109</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>info@spcclasses.com<br>admissions@spcclasses.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Office Hours</h3>
+                        <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Interested Course</label>
+                            <select id="course" name="course" required>
+                                <option value="">Select a course</option>
+                                <option value="accountancy">Accountancy</option>
+                                <option value="economics">Economics</option>
+                                <option value="business">Business Studies</option>
+                                <option value="multiple">Multiple Courses</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your learning goals..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SPC Classes</h3>
+                    <p>Education Beyond Books</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="#courses">Accountancy</a></li>
+                        <li><a href="#courses">Economics</a></li>
+                        <li><a href="#courses">Business Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@spcclasses.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Learning City, State</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SPC Classes. All rights reserved. | Education Beyond Books</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

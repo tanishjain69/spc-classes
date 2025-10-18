@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Test</title>
+    <style>
+        .course-dropdown {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            background: #f0f0f0;
+        }
+
+        .course-dropdown.active {
+            max-height: 800px;
+        }
+
+        .dropdown-content {
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dropdown Test</h1>
+    
+    <button onclick="toggleDetails('test')">Toggle Dropdown</button>
+    <button onclick="alert('Basic JS works')">Test JS</button>
+    
+    <div id="test" class="course-dropdown">
+        <div class="dropdown-content">
+            <h3>Test Content</h3>
+            <p>This is test content for the dropdown.</p>
+            <p>If you can see this, the dropdown is working!</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(courseId) {
+            console.log('toggleDetails called for:', courseId);
+            const dropdown = document.getElementById(courseId);
+            console.log('dropdown element:', dropdown);
+            
+            if (!dropdown) {
+                console.error('Dropdown not found for ID:', courseId);
+                return;
+            }
+            
+            dropdown.classList.toggle('active');
+            console.log('Dropdown classes after toggle:', dropdown.className);
+        }
+
+        // Make function globally accessible
+        window.toggleDetails = toggleDetails;
+        
+        console.log('Script loaded successfully');
+    </script>
+</body>
+</html>
