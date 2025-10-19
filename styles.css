@@ -1016,6 +1016,13 @@ body {
     font-size: 0.9rem;
 }
 
+/* Utility: ensure media scales on small screens */
+img, svg, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
@@ -1037,6 +1044,11 @@ body {
     
     .nav-menu.active {
         left: 0;
+    }
+
+    /* Tighter padding for small screens */
+    .container, .nav-container {
+        padding: 0 16px;
     }
     
     .hero-content {
@@ -1067,6 +1079,18 @@ body {
         gap: 0.8rem;
     }
     
+    .course-card {
+        padding: 1.5rem;
+    }
+
+    .course-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .dropdown-content {
+        padding: 1.2rem;
+    }
+
     .course-overview {
         padding: 0.8rem;
         margin-bottom: 1rem;
@@ -1085,6 +1109,11 @@ body {
         font-size: 0.85rem;
     }
 
+    .info-item, .curriculum-list li {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
     .features-grid {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 0.6rem;
@@ -1096,7 +1125,7 @@ body {
     }
 
     .course-dropdown.active {
-        max-height: 2500px;
+        max-height: 2500px; /* JS will override with precise height when opened */
     }
     
     .section-header h2 {
@@ -1125,6 +1154,15 @@ body {
     
     .section-header h2 {
         font-size: 1.8rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .dropdown-content {
+        padding: 1rem;
     }
     
     .stats-container {

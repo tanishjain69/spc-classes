@@ -25,45 +25,46 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Course Details Toggle
+// Course Details Toggle (dynamic max-height for smooth animation on mobile)
 function toggleDetails(courseId) {
-    console.log('toggleDetails called for:', courseId);
     const dropdown = document.getElementById(courseId);
-    console.log('dropdown element:', dropdown);
+    if (!dropdown) return;
     
-    if (!dropdown) {
-        console.error('Dropdown not found for ID:', courseId);
-        return;
-    }
-    
-    // Close all other dropdowns first
+    // Close other dropdowns and reset their heights
     document.querySelectorAll('.course-dropdown').forEach(dd => {
         if (dd.id !== courseId) {
             dd.classList.remove('active');
+            dd.style.maxHeight = '0px';
         }
     });
     
-    // Toggle current dropdown
+    // Toggle current dropdown and set height based on content
+    const isActive = dropdown.classList.contains('active');
     dropdown.classList.toggle('active');
-    console.log('Dropdown classes after toggle:', dropdown.className);
+    if (dropdown.classList.contains('active')) {
+        dropdown.style.maxHeight = dropdown.scrollHeight + 'px';
+    } else {
+        dropdown.style.maxHeight = '0px';
+    }
     
-    // Try to find and rotate icon (but don't fail if not found)
+    // Rotate the chevron icon if available
     try {
-        const button = dropdown.previousElementSibling.querySelector('.details-btn');
-        if (button) {
-            const icon = button.querySelector('i');
-            if (icon) {
-                if (dropdown.classList.contains('active')) {
-                    icon.style.transform = 'rotate(180deg)';
-                } else {
-                    icon.style.transform = 'rotate(0deg)';
-                }
-            }
+        const button = dropdown.previousElementSibling?.querySelector('.details-btn');
+        const icon = button?.querySelector('i');
+        if (icon) {
+            icon.style.transform = dropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
         }
     } catch (e) {
         console.log('Icon rotation failed, but dropdown should still work:', e);
     }
 }
+
+// Recalculate dropdown height on window resize (helps long content on mobile)
+window.addEventListener('resize', () => {
+    document.querySelectorAll('.course-dropdown.active').forEach(dd => {
+        dd.style.maxHeight = dd.scrollHeight + 'px';
+    });
+});
 
 // Make function globally accessible
 window.toggleDetails = toggleDetails;
