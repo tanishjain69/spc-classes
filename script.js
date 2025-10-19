@@ -385,3 +385,36 @@ loadingStyle.textContent = `
     }
 `;
 document.head.appendChild(loadingStyle);
+
+// FAQ toggle interactions
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.faq-item');
+    items.forEach(item => {
+        const questionBtn = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        if (!questionBtn || !answer) return;
+        
+        questionBtn.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close other open items
+            document.querySelectorAll('.faq-item.active').forEach(openItem => {
+                if (openItem !== item) {
+                    openItem.classList.remove('active');
+                    const openAnswer = openItem.querySelector('.faq-answer');
+                    if (openAnswer) {
+                        openAnswer.style.maxHeight = null;
+                    }
+                }
+            });
+            
+            if (isActive) {
+                item.classList.remove('active');
+                answer.style.maxHeight = null;
+            } else {
+                item.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+});
